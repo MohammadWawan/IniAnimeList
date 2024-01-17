@@ -2,6 +2,7 @@ import { Gabarito } from "next/font/google";
 import "./globals.css";
 import Navbar from "../components/Navbar";
 const gabarito = Gabarito({ subsets: ["latin"] });
+import Providers from "../components/Providers";
 
 export const metadata = {
   title: "IniAnimeList",
@@ -15,8 +16,10 @@ export default function RootLayout({ children }) {
         className={`${gabarito.className} bg-color-dark`}
         suppressHydrationWarning={true}
       >
-        <Navbar />
-        {children}
+        <Providers>
+          <Navbar />
+          {children}
+        </Providers>
       </body>
     </html>
   );

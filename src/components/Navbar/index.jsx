@@ -1,6 +1,7 @@
 "use client";
 import Link from "next/link";
 import InputSearch from "./inputSearch";
+import SigninButton from "./SigninButton";
 
 const Navbar = () => {
   return (
@@ -13,9 +14,7 @@ const Navbar = () => {
           INIANIMELIST
         </Link>
         <InputSearch />
-        <Link href="api/auth/signin" className="text-color-primary">
-          Sign In
-        </Link>
+        <SigninButton />
       </div>
     </header>
   );
