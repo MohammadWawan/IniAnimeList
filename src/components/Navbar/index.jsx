@@ -1,8 +1,8 @@
 "use client";
 import Link from "next/link";
 import InputSearch from "./inputSearch";
-import SigninButton from "./SigninButton";
 
+import UserActionButton from "./userActionButton";
 const Navbar = () => {
   return (
     <header className="bg-color-accent">
@@ -14,7 +14,7 @@ const Navbar = () => {
           INIANIMELIST
         </Link>
         <InputSearch />
-        <SigninButton />
+        <UserActionButton />
       </div>
     </header>
   );
